@@ -1,7 +1,7 @@
 # SAP S/4HANA - Study
 
 > Nível: prática
-> O ERP atual da SAP e o ponto de partida da fase 0 do roadmap. Este README também é o **índice da fase 0** (ver seção [Índice da fase 0](#índice-da-fase-0)). Relacionados: [SAP ECC](../SAP-ECC-erp-study/), [On-Premise](../SAP-S4HANA-On-Premise-erp-study/), [Cloud Private Edition](../SAP-S4HANA-Cloud-Private-Edition-erp-study/), [Cloud Public Edition](../SAP-S4HANA-Cloud-Public-Edition-erp-study/).
+> O ERP atual da SAP e o ponto de partida da fase 0 do roadmap. Este README também é o **índice da fase 0** (ver seção [Índice da fase 0](#índice-da-fase-0)). Relacionados: [SAP ECC](https://github.com/igor-barral/SAP-ECC-erp-study), [On-Premise](https://github.com/igor-barral/SAP-S4HANA-On-Premise-erp-study), [Cloud Private Edition](https://github.com/igor-barral/SAP-S4HANA-Cloud-Private-Edition-erp-study), [Cloud Public Edition](https://github.com/igor-barral/SAP-S4HANA-Cloud-Public-Edition-erp-study).
 
 ## Objetivo
 
@@ -63,7 +63,7 @@ Para o desenvolvedor, ela alimenta:
 - O **SAP Readiness Check**, que analisa um ECC e lista os itens relevantes para aquele cliente.
 - As **verificações de código custom para S/4HANA** no ABAP Test Cockpit (ATC), que apontam código que lê ou grava objetos simplificados.
 
-Esses passos são o assunto de [SAP-S4HANA-Migration-erp-study](../SAP-S4HANA-Migration-erp-study/).
+Esses passos são o assunto de [SAP-S4HANA-Migration-erp-study](https://github.com/igor-barral/SAP-S4HANA-Migration-erp-study).
 
 ### 3. Simplificações que afetam quem desenvolve
 
@@ -75,7 +75,7 @@ Esses passos são o assunto de [SAP-S4HANA-Migration-erp-study](../SAP-S4HANA-Mi
 | Material | `MATNR` com 18 caracteres | `MATNR` pode ter até 40 caracteres | Variáveis, estruturas e interfaces com tamanho fixo precisam de revisão |
 | Vendas: status | `VBUK`/`VBUP` | Campos de status incorporados em `VBAK`/`VBAP`, `LIKP`/`LIPS` etc. | Leituras de `VBUK`/`VBUP` precisam ser adaptadas (confirme o item na *simplification list*) |
 | Vendas: condições | `KONV` | `PRCD_ELEMENTS` | Leituras diretas de `KONV` precisam ser revistas |
-| Armazém | WM clássico (LE-WM) | EWM (embutido ou descentralizado) | Ver [WM](../SAP-WM-erp-study/) e [EWM](../SAP-EWM-erp-study/) |
+| Armazém | WM clássico (LE-WM) | EWM (embutido ou descentralizado) | Ver [WM](https://github.com/igor-barral/SAP-WM-erp-study) e [EWM](https://github.com/igor-barral/SAP-EWM-erp-study) |
 | Interface | SAP GUI | Fiori | Novas telas passam a ser apps Fiori / RAP |
 
 ### 4. Por que um `SELECT` em `MSEG` ainda funciona
@@ -118,7 +118,7 @@ flowchart LR
     ECC ==> S4
 ```
 
-`BKPF` continua sendo o cabeçalho e `BSEG` continua existindo como visão de entrada do documento. O ganho é a eliminação da reconciliação entre FI e CO, que no ECC eram gravados separadamente. Mais em [SAP-FI-erp-study](../SAP-FI-erp-study/) e [SAP-CO-erp-study](../SAP-CO-erp-study/).
+`BKPF` continua sendo o cabeçalho e `BSEG` continua existindo como visão de entrada do documento. O ganho é a eliminação da reconciliação entre FI e CO, que no ECC eram gravados separadamente. Mais em [SAP-FI-erp-study](https://github.com/igor-barral/SAP-FI-erp-study) e [SAP-CO-erp-study](https://github.com/igor-barral/SAP-CO-erp-study).
 
 ### 6. O que muda para quem desenvolve
 
@@ -143,9 +143,9 @@ Os temas dessa tabela são as fases 3 a 6 do roadmap. O ABAP clássico continua 
 | Modificação do padrão | Permitida | Permitida, mas desencorajada (Clean Core) | Não permitida |
 | ABAP clássico | Sim | Sim | Não; só ABAP Cloud |
 | Ritmo de upgrade | O cliente decide | Acordado no contrato, dentro das releases suportadas | Definido pela SAP, em ciclos fixos |
-| Pacote comercial típico | Venda tradicional | [RISE with SAP](../RISE-with-SAP-erp-study/) | [GROW with SAP](../GROW-with-SAP-erp-study/) |
+| Pacote comercial típico | Venda tradicional | [RISE with SAP](https://github.com/igor-barral/RISE-with-SAP-erp-study) | [GROW with SAP](https://github.com/igor-barral/GROW-with-SAP-erp-study) |
 | Caminho a partir do ECC | Conversão, nova implantação ou transição seletiva | Conversão, nova implantação ou transição seletiva | Nova implantação (*greenfield*) |
-| Estudo | [On-Premise](../SAP-S4HANA-On-Premise-erp-study/) | [Private Edition](../SAP-S4HANA-Cloud-Private-Edition-erp-study/) | [Public Edition](../SAP-S4HANA-Cloud-Public-Edition-erp-study/) |
+| Estudo | [On-Premise](https://github.com/igor-barral/SAP-S4HANA-On-Premise-erp-study) | [Private Edition](https://github.com/igor-barral/SAP-S4HANA-Cloud-Private-Edition-erp-study) | [Public Edition](https://github.com/igor-barral/SAP-S4HANA-Cloud-Public-Edition-erp-study) |
 
 ```mermaid
 flowchart TD
@@ -167,34 +167,34 @@ Fase 0 do roadmap: **Negócio e ecossistema SAP**. Repositórios de documentaç�
 
 | Repositório | Nível | Tema |
 |---|---|---|
-| [SAP-ECC-erp-study](../SAP-ECC-erp-study/) | prática | O ERP anterior, fim da manutenção e modelo de dados antigo |
-| [SAP-S4HANA-erp-study](../SAP-S4HANA-erp-study/) | prática | Este repositório: o que define o S/4HANA e índice da fase |
-| [SAP-S4HANA-On-Premise-erp-study](../SAP-S4HANA-On-Premise-erp-study/) | prática | Edição instalada e operada pelo cliente |
-| [SAP-S4HANA-Cloud-Private-Edition-erp-study](../SAP-S4HANA-Cloud-Private-Edition-erp-study/) | prática | Mesmo produto, operado pela SAP |
-| [SAP-S4HANA-Cloud-Public-Edition-erp-study](../SAP-S4HANA-Cloud-Public-Edition-erp-study/) | prática | SaaS multi-tenant, só ABAP Cloud |
-| [RISE-with-SAP-erp-study](../RISE-with-SAP-erp-study/) | noção | Pacote comercial da Private Edition |
-| [GROW-with-SAP-erp-study](../GROW-with-SAP-erp-study/) | noção | Pacote comercial da Public Edition |
+| [SAP-ECC-erp-study](https://github.com/igor-barral/SAP-ECC-erp-study) | prática | O ERP anterior, fim da manutenção e modelo de dados antigo |
+| [SAP-S4HANA-erp-study](https://github.com/igor-barral/SAP-S4HANA-erp-study) | prática | Este repositório: o que define o S/4HANA e índice da fase |
+| [SAP-S4HANA-On-Premise-erp-study](https://github.com/igor-barral/SAP-S4HANA-On-Premise-erp-study) | prática | Edição instalada e operada pelo cliente |
+| [SAP-S4HANA-Cloud-Private-Edition-erp-study](https://github.com/igor-barral/SAP-S4HANA-Cloud-Private-Edition-erp-study) | prática | Mesmo produto, operado pela SAP |
+| [SAP-S4HANA-Cloud-Public-Edition-erp-study](https://github.com/igor-barral/SAP-S4HANA-Cloud-Public-Edition-erp-study) | prática | SaaS multi-tenant, só ABAP Cloud |
+| [RISE-with-SAP-erp-study](https://github.com/igor-barral/RISE-with-SAP-erp-study) | noção | Pacote comercial da Private Edition |
+| [GROW-with-SAP-erp-study](https://github.com/igor-barral/GROW-with-SAP-erp-study) | noção | Pacote comercial da Public Edition |
 
 ### Estrutura, dados mestres e papéis
 
 | Repositório | Nível | Tema |
 |---|---|---|
-| [SAP-Enterprise-Structure-erp-study](../SAP-Enterprise-Structure-erp-study/) | prática | Mandante, empresa, centro, depósito, organizações |
-| [SAP-Business-Partner-erp-study](../SAP-Business-Partner-erp-study/) | prática | Business Partner e CVI |
-| [SAP-RICEFW-erp-study](../SAP-RICEFW-erp-study/) | prática | Papéis no mercado e tipos de objeto de desenvolvimento |
+| [SAP-Enterprise-Structure-erp-study](https://github.com/igor-barral/SAP-Enterprise-Structure-erp-study) | prática | Mandante, empresa, centro, depósito, organizações |
+| [SAP-Business-Partner-erp-study](https://github.com/igor-barral/SAP-Business-Partner-erp-study) | prática | Business Partner e CVI |
+| [SAP-RICEFW-erp-study](https://github.com/igor-barral/SAP-RICEFW-erp-study) | prática | Papéis no mercado e tipos de objeto de desenvolvimento |
 
 ### Módulos e processos
 
 | Repositório | Nível | Tema |
 |---|---|---|
-| [SAP-MM-erp-study](../SAP-MM-erp-study/) | prática | Materiais, compras, estoque |
-| [SAP-SD-erp-study](../SAP-SD-erp-study/) | prática | Vendas, remessa, faturamento |
-| [SAP-FI-erp-study](../SAP-FI-erp-study/) | prática | Contabilidade financeira |
-| [SAP-CO-erp-study](../SAP-CO-erp-study/) | noção | Controladoria |
-| [SAP-WM-erp-study](../SAP-WM-erp-study/) | noção | Warehouse Management clássico |
-| [SAP-EWM-erp-study](../SAP-EWM-erp-study/) | noção | Extended Warehouse Management |
-| [SAP-Procure-to-Pay-erp-study](../SAP-Procure-to-Pay-erp-study/) | prática | Fluxo de compras ponta a ponta |
-| [SAP-Order-to-Cash-erp-study](../SAP-Order-to-Cash-erp-study/) | prática | Fluxo de vendas ponta a ponta |
+| [SAP-MM-erp-study](https://github.com/igor-barral/SAP-MM-erp-study) | prática | Materiais, compras, estoque |
+| [SAP-SD-erp-study](https://github.com/igor-barral/SAP-SD-erp-study) | prática | Vendas, remessa, faturamento |
+| [SAP-FI-erp-study](https://github.com/igor-barral/SAP-FI-erp-study) | prática | Contabilidade financeira |
+| [SAP-CO-erp-study](https://github.com/igor-barral/SAP-CO-erp-study) | noção | Controladoria |
+| [SAP-WM-erp-study](https://github.com/igor-barral/SAP-WM-erp-study) | noção | Warehouse Management clássico |
+| [SAP-EWM-erp-study](https://github.com/igor-barral/SAP-EWM-erp-study) | noção | Extended Warehouse Management |
+| [SAP-Procure-to-Pay-erp-study](https://github.com/igor-barral/SAP-Procure-to-Pay-erp-study) | prática | Fluxo de compras ponta a ponta |
+| [SAP-Order-to-Cash-erp-study](https://github.com/igor-barral/SAP-Order-to-Cash-erp-study) | prática | Fluxo de vendas ponta a ponta |
 
 Ordem sugerida: produto e edições (semana 1), estrutura e dados mestres (semana 2), módulos e processos (semanas 3 e 4).
 
